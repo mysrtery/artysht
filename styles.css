@@ -1,0 +1,174 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.text  {
+   text-align: center;
+}
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    }
+    
+    .slide {
+    display: none;
+    text-align: center;
+    padding: 50px 0;
+    }
+    .slide img{
+        background-size: fixed;
+        width: 350px;
+        height: 250px;
+    }
+    
+    .active {
+    display: block;
+    }
+    
+    .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f2f2f2;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    }
+    
+    .prev {
+    left: 0;
+    }
+    
+    .next {
+    right: 0;
+    }
+   
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4);
+        }
+        
+        .modal-content {
+        background-color: #fefefe;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 500px;
+        height: 500px;
+        }
+        
+        .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+        }
+#openModal{
+    border-radius: 5px;
+    font-size: 18px;
+    position: absolute;
+    bottom:  90%;
+    margin: 20px;
+    color: white;
+    background: red;
+    border: 0px;
+    padding: 20px;
+
+}
+.form_auth_block{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    border-radius: 4px;
+}
+.form_auth_block_content{
+  padding-top: 15%;
+}
+.form_auth_block_head_text{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    background: #ffffff;
+    opacity: 0.7;
+}
+.form_auth_block label{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    opacity: 0.7;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.form_auth_block input{
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 45px;
+  border-radius: 10px;  
+  border:none;
+  outline: none;
+}
+input:focus {
+  color: #000000;
+  border-radius: 10px;
+  border: 2px solid #436fea;
+}
+.form_auth_button{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+}
+.text1{
+    color: #111010;
+    width: 50%;
+    margin: 0 auto;
+}
+@media (max-width: 576px){
+    #openModal{
+        padding: 17px;
+        bottom: 88%;
+    }
+}
+@media (max-width: 768px){
+    #openModal{
+        padding: 17px;
+        bottom: 85%;
+    }
+}
+@media (max-width: 280px){
+    #openModal{
+        padding: 17px;
+        bottom: 80%;
+    }
+}
+@media (max-width: 412px){
+    #openModal{
+        padding: 17px;
+        bottom: 84%;
+    }
+}

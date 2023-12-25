@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Slider</title>
+</head>
+<body>
+    <div class="text">
+    <h1>Компьютеры и будущее.</h1>
+</div>
+<div class="slider-container">
+<div class="slide active">
+<img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/6fa/d7a/c74/6fad7ac74344233f2d89aa0df554ae37.png">
+</div>
+<div class="slide">
+<img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/ec6/dbc/cf9/ec6dbccf9dce2af719daa473e8c74166.png">
+</div>
+<div class="slide">
+<img src="https://habrastorage.org/r/w1560/getpro/habr/upload_files/a8e/a77/455/a8ea7745574614cdc41fe51aaae4ffa7.png">
+</div>
+<button class="prev" onclick="prevSlide()">❮</button>
+<button class="next" onclick="nextSlide()">❯</button>
+</div>
+<button id="openModal">Вход</button>
+
+<div id="modal" class="modal">
+<div class="modal-content">
+<span class="close">&times;</span>
+<div class="form_auth_block">
+    <div class="form_auth_block_content">
+      <p class="form_auth_block_head_text">Авторизация</p>
+      <form class="form_auth_style" action="#" method="post">
+        <label>Введите Ваш имейл</label>
+        <input type="email" name="auth_email" placeholder="Введите Ваш имейл" required >
+        <label>Введите Ваш пароль</label>
+        <input type="password" name="auth_pass" placeholder="Введите пароль" required >
+        <button class="form_auth_button" type="submit" name="form_auth_submit">Войти</button>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+<div class="text1">
+    <h1>Каким может быть компьютер будущего?</h1>
+    <P>Можно ли было представить до 2007 года, каким будет телефон будущего? А до 1990-х годов – как будут выглядеть ноутбуки в 2023? Если следить за тенденциями в ИКТ, в общении между людьми, за разработками учёных, и читать научно-фантастические произведения, смотреть фильмы о будущем – то да, представить будущее возможно.
+<Br>
+        В этой статье (и главное – в комментариях!) предлагаем поговорить о прошлом и о будущем, каким оно может стать. Обсудим водяные компьютеры и ДНК-компьютеры, органоиды из клеток мозга вместо искусственного интеллекта и будущее гибких дисплеев и аккумуляторов, а также возможности привнести запахи в использование гаджетов. 
+        <br>
+        Готовы ли мы к такому будущему? Или большая часть таких идей ограничивается фантазиями и прототипами, которые никогда не выйдут в серию? Давайте разберемся вместе.</P>
+        <br>
+        <h1>Водные компьютеры прошлого</h1>
+        <P>Если говорить об «альтернативном компьютеростроении» XX века, то начинать можно с водяных компьютеров. В 1936 году в СССР разработали гидравлический вычислитель. Инженер Владимир Лукьянов с помощью своего изобретения анализировал изменение температуры в бетоне в зависимости от его состава, технологии заливки и внешних условий.
+<Br>
+            Подробности есть в статье в «Науке и жизни»: из неё можно узнать о том, что Лукьянов 40 лет руководил лабораторией гидравлических аналогий, и что гидроинтеграторы в СССР производили серийно и экспортировали в Чехословакию, Польшу, Болгарию и Китай.
+            В 1949 году в США с помощью водяного компьютеры пытались представить процессы, происходящие в экономике. В гидравлическом вычислителе MONIAC ёмкости представляли собой банки, потребительские траты, сбережения, налоги и так далее. 
+<br>
+            Устройство позволяло производить различные эксперименты. Например, снижать цены на акции, чтобы поощрять инвестиции в них со стороны граждан.</P>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
